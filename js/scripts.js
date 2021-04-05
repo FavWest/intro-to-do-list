@@ -27,9 +27,6 @@ Task.prototype.markAsComplete = function() {
   this.complete=true;
 };
 
-
-
-
 let taskList = new ListOfTasks();
 
 // UI Logic
