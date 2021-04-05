@@ -1,37 +1,8 @@
-## Specs
-#### Describe: MakeTask
-"It should construct a Task object with properties taskName, description, complete"
-Code: 
-let dishes = new Task("dishes", "put away");
-console.log(dishes);
-Expected Output: Task {taskName: "dishes", description: "put away", complete: false};
+# To-Do List
 
-Test: "it should insert new task into list of tasks object"
-Code: let dishes = new Task("dishes", "put away");
-taskList.addTask(dishes);
-Expected Output:
+#### Create a list of tasks, check them as done or delete them
 
-#### Describe: MarkAsComplete
-Test: "It should change the task.complete boolean to 'true'"
-Code: let dishes = new Task("dishes", "put away");
-dishes.MarkAsComplete();
-console.log(dishes.complete);
-Expected Output: true;
-
-#### Describe: Delete
-Test: "It should delete the selected task from taskList"
-Code: let dishes = new Task("dishes", "put away");
-taskList.addTask(dishes);
-taskList.delete(0);
-console.log(taskList.tasks[0])
-Expected Output: undefined
-
-
-# TITLE
-
-#### Brief Description
-
-#### By _**Victoria West**_
+#### By _**John Edmondson**_, _**Victoria West**_
 
 ## Technologies Used
 * HTML
@@ -61,6 +32,37 @@ _Description_
 * 
 ## License
 MIT
-Copyright (c) 2021 Victoria West
+Copyright (c) 2021 John Edmondson and Victoria West
 ## Contact Information
 Victoria West email@email.com
+
+## Specs
+#### Describe: MakeTask
+"It should construct a Task object with properties taskName, description, complete"
+Code: 
+let dishes = new Task("dishes", "put away");
+console.log(dishes);
+Expected Output: Task {taskName: "dishes", description: "put away", complete: false};
+
+Test: "it should insert new task into list of tasks object"
+Code: let dishes = new Task("dishes", "put away");
+taskList.addTask(dishes);
+Expected Output:
+
+#### Describe: MarkAsComplete
+Test: "It should change the task.complete boolean to 'true'"
+Code: let dishes = new Task("dishes", "put away");
+dishes.MarkAsComplete();
+console.log(dishes.complete);
+Expected Output: true;
+
+#### Describe: Delete
+Test: "It should delete the selected task from taskList"
+Code: let dishes = new Task("dishes", "put away");
+taskList.addTask(dishes);
+taskList.delete(0);
+console.log(taskList.tasks[0])
+Expected Output: undefined
+
+
+
