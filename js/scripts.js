@@ -15,7 +15,7 @@ function Task(name, description) {
   this.complete= false;
 }
 
-Task.prototype.markAsComplete = function(task) {
+Task.prototype.markAsComplete = function() {
   this.complete=true;
 };
 

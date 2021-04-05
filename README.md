@@ -11,6 +11,14 @@ Code: let dishes = new Task("dishes", "put away");
 taskList.addTask(dishes);
 Expected Output:
 
+#### Describe: MarkAsComplete
+Test: "It should change the task.complete boolean to 'true'"
+Code: let dishes = new Task("dishes", "put away");
+dishes.MarkAsComplete();
+console.log(dishes.complete);
+Expected Output: true;
+
+
 
 # TITLE
 
