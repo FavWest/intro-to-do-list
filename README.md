@@ -1,3 +1,17 @@
+## Specs
+#### Describe: MakeTask
+"It should construct a Task object with properties taskName, description, complete"
+Code: 
+let dishes = new Task("dishes", "put away");
+console.log(dishes);
+Expected Output: Task {taskName: "dishes", description: "put away", complete: false};
+
+Test: "it should insert new task into list of tasks object"
+Code: let dishes = new Task("dishes", "put away");
+taskList.addTask(dishes);
+Expected Output:
+
+
 # TITLE
 
 #### Brief Description
