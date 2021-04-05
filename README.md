@@ -18,6 +18,13 @@ dishes.MarkAsComplete();
 console.log(dishes.complete);
 Expected Output: true;
 
+#### Describe: Delete
+Test: "It should delete the selected task from taskList"
+Code: let dishes = new Task("dishes", "put away");
+taskList.addTask(dishes);
+taskList.delete(0);
+console.log(taskList.tasks[0])
+Expected Output: undefined
 
 
 # TITLE

@@ -1,12 +1,20 @@
 // Business Logic
 function ListOfTasks() {
-  this.tasks=[];
+  this.tasks={};
   this.currentId=0;
 }
 
 ListOfTasks.prototype.addTask = function(task){
-  this.tasks.push(task);
+  this.tasks[this.currentId]= task;
   this.currentId ++;
+};
+
+ListOfTasks.prototype.delete=function(selectedId){
+  if(this.tasks[selectedId]===undefined) {
+    return false;
+  }
+  delete this.tasks[selectedId];
+  return true;
 };
 
 function Task(name, description) {
@@ -19,13 +27,7 @@ Task.prototype.markAsComplete = function() {
   this.complete=true;
 };
 
-Task.prototype.delete=(function(task){
-  if(this.tasks[name]===undefined) {
-    return false;
-  }
-  delete this.tasks[name];
-  return true;
-});
+
 
 
 let taskList = new ListOfTasks();
